@@ -24,7 +24,7 @@ const UsersList = () => {
         <div>
             {
                 usersdata.map((dataSet: any, index: number) => (
-                    <Link to={`/users/`}><p>{dataSet.first_name} {'  '} {dataSet.last_name}</p></Link>
+                    <Link to={`/users/${dataSet.id}`}><p>{dataSet.first_name} {'  '} {dataSet.last_name}</p></Link>
                 ))
             }
         </div>
