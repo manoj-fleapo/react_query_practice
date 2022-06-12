@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import UsersList from "./Pages/UsersList"
 import { QueryClient, QueryClientProvider } from "react-query"
 import { ReactQueryDevtools } from "react-query/devtools"
+import UserDetails from './Pages/UserDetails';
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/react-query" element={<UsersList />} />
+        <Route path="/users/:id" element={<UserDetails />} />
       </Routes>
 
     </div>

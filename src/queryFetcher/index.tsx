@@ -1,6 +1,6 @@
 import axios from "axios";
-import request from "https";
+import request from "../http";
 
 export const getUserList = () => {
-    return axios.get("http://localhost:4500/user-list")
+    return request.get("/user-list")
 } 
